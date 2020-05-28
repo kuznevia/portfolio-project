@@ -1,0 +1,11 @@
+h1 {
+	color:purple;
+}
+
+body {
+	background-image: url("img/bg-sunset.jpeg");
+}
+
+.page-header {
+	text-align: center;
+}
