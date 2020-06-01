@@ -8,4 +8,13 @@ body {
 
 .page-header {
 	text-align: center;
+	background-color: rgba(22, 179, 15, 0.5);\
+	padding:20px;
+}
+
+.page-footer {
+	text-align: center;
+	margin-top:200px;
+	padding:20px;
+	background-color: rgba(44, 45, 150, 0.5);
 }
