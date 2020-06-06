@@ -3,8 +3,10 @@ h1 {
 }
 
 body {
-	background-image: url("img/bg-sunset.jpeg");
+	background-image: url("img/bg-air.jpeg");
+	background-size: 100%;
 }
+
 
 .page-header {
 	text-align: center;
@@ -17,4 +19,13 @@ body {
 	margin-top:200px;
 	padding:20px;
 	background-color: rgba(44, 45, 150, 0.5);
+}
+
+.portrait {
+	margin: 0px;
+}
+
+.portrait img {
+	height: 300px;
+	border-radius: 50%;
 }
