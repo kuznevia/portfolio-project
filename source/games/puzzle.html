@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>КВВ</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/agent_smith.png" type="image/x-icon">
+	<script type="text/javascript">
+		
+		var score = 0;
+		var numberOfRiddles = 0;
+
+		function checkAnswer(inputId, answers){
+			var userAnswer = document.getElementById(inputId).value;
+			userAnswer = userAnswer.toLowerCase();
+			for(var i = 0; i < answers.length; i++){
+				if(userAnswer == answers[i]){
+					score++;
+					numberOfRiddles++;
+					return;
+				}
+			}
+			numberOfRiddles++;
+		}
+
+	
+		function write (text){
+			document.getElementById("info").innerHTML = text;
+		}	
+
+		function hide (id){
+			document.getElementById(id).style.display = "none";
+		}
+
+		function checkAnswers (){
+			
+		checkAnswer("userAnswer1",  ["лампочка", "лампа"]);
+		checkAnswer("userAnswer2", ["ель", "елка", "ёлка"]);
+		checkAnswer("userAnswer3", ["качеля", "качели", "качель"]);
+
+
+			if (score == numberOfRiddles) {
+				
+			write("Вы ответили на все " + numberOfRiddles + " загадки правильно. Поздравляю!" );
+			hide ('button');
+			hide ('userAnswer1');
+			hide ('userAnswer2');
+			hide ('userAnswer3');
+			hide ('info2');	
+			hide ('info3');
+				
+			} else if (score < numberOfRiddles && score > 0) {
+
+			write("Вы ответили на " + score + " из " + numberOfRiddles + " загадки правильно.<br> Попробуйте еще раз. Нажмите F5." );
+			hide ('button');
+			hide ('userAnswer1');
+			hide ('userAnswer2');
+			hide ('userAnswer3');
+			hide ('info2');	
+			hide ('info3');
+			} else {
+
+			write("Вы не ответили ни на одну из "  + numberOfRiddles + " загадок правильно.<br> Попробуйте еще раз. Нажмите F5" );
+			hide ('button');
+			hide ('userAnswer1');
+			hide ('userAnswer2');
+			hide ('userAnswer3');
+			hide ('info2');	
+			hide ('info3');
+
+		    }
+
+		}
+	
+	</script>
+</head>
+<body>
+
+<div class="content">
+	<div class='header'>
+		<a href="index.html"> Главная</a>
+		<a href="puzzle.html"> Загадки</a>
+		<a href="guess.html"> Угадайка</a>
+		<a href="guess_multiplayer.html"> Угадайка для двух игроков</a>
+		<a href="generator.html"> Генератор случайных паролей</a>
+	</div>
+
+<div class="contentWrap">
+    <div class="content">
+        <div class="center">
+
+			<h1>Игра в загадки</h1>
+
+			<div class="box">
+
+				<p id="info">Висит груша нельзя скушать</p>
+				<input type="text" id="userAnswer1">
+
+				<p id="info2">Зимой и летом одним цветом</p>
+				<input type="text" id="userAnswer2">
+
+				<p id="info3">Туда-сюда-обратно, тебе и мне приятно</p>
+				<input type="text" id="userAnswer3">
+
+				<br>
+				<a href="#" onClick="checkAnswers();" id="button">Ответить</a>
+
+				</div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class='footer'>
+	Copyright &copy; kuznevia
+</div>
+ 
+</body>
+</html>
