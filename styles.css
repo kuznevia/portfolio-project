@@ -4,6 +4,10 @@ h1 {
 
 body {
 	font-family: Merriweather, serif;
+	/*
+	background: url(img/hero-bg.jpg) fixed;
+	background-size: cover;
+	*/
 }
 
 figure {
