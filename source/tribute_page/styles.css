@@ -25,6 +25,26 @@ div {
 	margin:70px;
 }
 
+.change-language {
+	display: block;
+	text-align: right;
+	font-size: 24px;
+	text-decoration: none;
+	color:black;
+}
+
+.change-language:hover {
+	font-size: 24px;
+	color:black;
+	text-decoration: underline;
+}
+
+.change-language a:visited {
+	font-size: 24px;
+	text-decoration: none;
+	color:black;
+}
+
 .years {
 	font-weight: bold;
 	font-size:24px;

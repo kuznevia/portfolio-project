@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>КВВ</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" href="img/agent_smith.png" type="image/x-icon">
 	<script type="text/javascript">
 
@@ -42,43 +42,33 @@
 				write('Вы ввели слишком маленькое число.<br> Попробуйте еще раз.<br> У вас осталось ' + (maxTryCount - tryCount) +' попыток')
 			}
 		}
-
-
 	</script>
 </head>
 <body>
-
-<div class="content">
-	<div class='header'>
-		<a href="index.html"> Главная</a>
-		<a href="puzzle.html"> Загадки</a>
-		<a href="guess.html"> Угадайка</a>
-		<a href="guess_multiplayer.html"> Угадайка для двух игроков</a>
-		<a href="generator.html"> Генератор случайных паролей</a>
+	<div id="page-container">
+		<div id="content-wrap">
+			<header>
+					<a href="index.html"> Главная</a>
+					<a href="puzzle.html"> Загадки</a>
+					<a href="guess.html"> Угадайка</a>
+					<a href="guess_multiplayer.html"> Угадайка для двух игроков</a>
+					<a href="generator.html"> Генератор случайных паролей</a>
+			</header>
+			<main>
+				<section>
+					<h1 class="maintext">Игра Угадайка</h1>
+					<div class="box">
+						<p id="info">Угадайте число от 0 до 100</p>
+						<input type="text" id="userAnswer">
+						<br>
+						<button type="button" onClick="guess();" id="button">Начать</button>
+					</div>
+				</section>
+			</main>
+		</div>
+		<footer>
+		<span>Copyright &copy; kuznevia</span>
+		</footer>
 	</div>
-
-<div class="contentWrap">
-    <div class="content">
-        <div class="center">
-
-			<h1>Игра Угадайка</h1>
-
-			<div class="box">
-
-				<p id="info">Угадайте число от 0 до 100</p>
-				<input type="text" id="userAnswer">
-				<br>
-				<a href="#" onClick="guess();" id="button">Начать</a>
-
-			</div>
-
-        </div>
-    </div>
-</div>
-
-<div class='footer'>
-	Copyright &copy; kuznevia
-</div>
- 
 </body>
 </html>

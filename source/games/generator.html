@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>КВВ</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" href="img/agent_smith.png" type="image/x-icon">
 	<script type="text/javascript">
 
-		
-		
 		function generate(){
 			var passwordLength = readInt();
 			var password = '';
 			var letter;
 			var digit;
 			var possible = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-=#!%$*";
+			var copy = document.querySelector('#copy');
+			document.getElementById("password").innerHTML = '';
 
 			for (var i = 0; i < passwordLength; i++) {
 				var random = parseInt(Math.random() * 100);
@@ -22,9 +22,14 @@
 				password = password + letter;	
 			}
 			write(password);
+			copy.classList.remove('hidden');
 		}
 		
 		function write (text){
+			document.getElementById("length").value = text;
+		}
+
+		function show (text){
 			document.getElementById("password").innerHTML = text;
 		}
 
@@ -33,41 +38,46 @@
 			return parseInt(number);
 		}
 
+		function copy (){
+			var copyText = document.getElementById("length");
+			copyText.select();
+			document.execCommand("copy");
+			show('Скопирован пароль: ' + copyText.value);
+		}
+
+		function reset(){
+			document.getElementById("password").innerHTML = '';
+			document.getElementById("length").value = '';
+		}
+
 	</script>
 </head>
 <body>
-
-<div class="content">
-	<div class='header'>
-		<a href="index.html"> Главная</a>
-		<a href="puzzle.html"> Загадки</a>
-		<a href="guess.html"> Угадайка</a>
-		<a href="guess_multiplayer.html"> Угадайка для двух игроков</a>
-		<a href="generator.html"> Генератор случайных паролей</a>
+	<div id="page-container">
+		<div id="content-wrap">
+			<header>
+				<a href="index.html"> Главная</a>
+				<a href="puzzle.html"> Загадки</a>
+				<a href="guess.html"> Угадайка</a>
+				<a href="guess_multiplayer.html"> Угадайка для двух игроков</a>
+				<a href="generator.html"> Генератор случайных паролей</a>
+			</header>
+			<main>
+				<section>
+					<h1 class="maintext">Генератор случайных паролей</h1>
+					<div class="box">
+						<input type="text" id="length" placeholder="Введите длину пароля">
+						<h3 id="password"></h3>
+						<button type="button" onClick="generate();" id="button">Сгенерировать</button>
+						<button type="reset" onClick="reset()" value="Сбросить">Сбросить</button>
+						<button type="button" onClick="copy();" id="copy" class="hidden">Копировать</button>
+					</div>
+				</section>
+			</main>
+		</div>
+		<footer>
+		<span>Copyright &copy; kuznevia</span>
+		</footer>
 	</div>
-
-<div class="contentWrap">
-    <div class="content">
-        <div class="center">
-
-			<h1>Генератор случайных паролей</h1>
-
-			<div class="box">
-
-				<p id="info">Введите длину пароля</p>
-				<input type="text" id="length">
-				<h3 id="password"></h3>
-				<a href="#" onClick="generate();" id="button">Сгенерировать</a>
-
-			</div>
-
-        </div>
-    </div>
-</div>
-
-<div class='footer'>
-	Copyright &copy; kuznevia
-</div>
- 
 </body>
 </html>

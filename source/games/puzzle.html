@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>КВВ</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" href="img/agent_smith.png" type="image/x-icon">
 	<script type="text/javascript">
 		
@@ -75,46 +75,35 @@
 	</script>
 </head>
 <body>
+	<div id="page-container">
+		<div id="content-wrap">
+			<header>
+				<a href="index.html"> Главная</a>
+				<a href="puzzle.html"> Загадки</a>
+				<a href="guess.html"> Угадайка</a>
+				<a href="guess_multiplayer.html"> Угадайка для двух игроков</a>
+				<a href="generator.html"> Генератор случайных паролей</a>
+			</header>
+			<main>
+				<h1 class="maintext">Игра в загадки</h1>
+				<div class="box">
 
-<div class="content">
-	<div class='header'>
-		<a href="index.html"> Главная</a>
-		<a href="puzzle.html"> Загадки</a>
-		<a href="guess.html"> Угадайка</a>
-		<a href="guess_multiplayer.html"> Угадайка для двух игроков</a>
-		<a href="generator.html"> Генератор случайных паролей</a>
+					<p id="info">Висит груша нельзя скушать</p>
+					<input type="text" id="userAnswer1">
+
+					<p id="info2">Зимой и летом одним цветом</p>
+					<input type="text" id="userAnswer2">
+
+					<p id="info3">Туда-сюда-обратно, тебе и мне приятно</p>
+					<input type="text" id="userAnswer3"><br>
+
+					<button type="button" onClick="checkAnswers();" id="button">Ответить</button>
+				</div>			
+			 </main>
+		</div>
+		 <footer>
+			<span>Copyright &copy; kuznevia</span>
+		</footer>
 	</div>
-
-<div class="contentWrap">
-    <div class="content">
-        <div class="center">
-
-			<h1>Игра в загадки</h1>
-
-			<div class="box">
-
-				<p id="info">Висит груша нельзя скушать</p>
-				<input type="text" id="userAnswer1">
-
-				<p id="info2">Зимой и летом одним цветом</p>
-				<input type="text" id="userAnswer2">
-
-				<p id="info3">Туда-сюда-обратно, тебе и мне приятно</p>
-				<input type="text" id="userAnswer3">
-
-				<br>
-				<a href="#" onClick="checkAnswers();" id="button">Ответить</a>
-
-				</div>
-
-        </div>
-    </div>
-</div>
-
-
-<div class='footer'>
-	Copyright &copy; kuznevia
-</div>
- 
 </body>
 </html>
