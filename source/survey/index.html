@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+  <title>Survey form</title>
+ </head>
+ <body>
+ 	<div id="content">
+ 		<h1 id="title">Programming specialisation survey</h1>
+ 		<p id="description">Thank you for your participation in advance</p>
+ 		<form id="survey-form">
+ 			<fieldset id="personal-info">
+	 			<label id="name-label" for="name" ><p>Name</p></label>
+	 			<input type="text" id="name" placeholder="Enter your name" required>
+	 			
+	 			<label id="email-label" for="email"><p>Email</p></label>
+	 			<input type="email" id="email" placeholder="Enter your Email" required>
+	 			
+	 			
+	 			<label id="number-label" for="number"><p>Age<span class="add-info">(optional)</span></p></label>
+	 			<input type="number" id="number" min="5" max="100" placeholder="Age">
+
+ 			</fieldset>
+ 			<fieldset id="specialisation">
+
+ 				<p>Please choose your specialisation</p>
+
+	 			<select class="drop" id="dropdown">
+	 				<option disabled selected>Select specialisation</option>
+	 				<option>Frontend</option>
+	 				<option>Backend</option>
+	 				<option>Desktop/Mobile apps</option>
+	 				<option>Games</option>
+	 				<option>Data Science</option>
+	 				<option>Other</option>
+	 			</select>
+
+ 				<p>Please choose main programming language you use/learn</p>
+
+	 			<select class="drop" id="dropdown-two">
+	 				<option disabled selected>Select language</option>
+	 				<option>JavaScript</option>
+	 				<option>Java</option>
+	 				<option>Python</option>
+	 				<option>C#</option>
+	 				<option>C++</option>
+	 				<option>PHP</option>
+	 				<option>Ruby</option>
+	 				<option>Other</option>
+	 			</select>
+
+ 				<p>Would you recommend it for a beginner?</p>
+
+ 				<input type="radio" name="radio" id="first-radio" value="First">
+ 				<label for="first-radio">Yes</label><br>
+
+ 				<input type="radio" name="radio" id="second-radio" value="Second">
+ 				<label for="second-radio">No</label><br>
+
+ 				<input type="radio" name="radio" id="third-radio" value="Third">
+ 				<label for="third-radio">Not sure</label>
+ 			</fieldset>
+ 			<fieldset id="recommend">
+ 				
+ 				<p>How long do you use/learn your main programming language?</p>
+
+	 			<select class="drop" id="dropdown-three">
+	 				<option disabled selected>Select duration</option>
+	 				<option>0-1 year</option>
+	 				<option>1-3 years</option>
+	 				<option>3+ years</option>
+	 			</select>
+
+	 			<p>What are the best ways to study your specialisation and your language<span class="add-info"> (check all that apply)</span></p>
+
+ 				<input type="checkbox" name="checkbox" id="first-check" value="First">
+ 				<label for="first-check">Reading books</label><br>
+
+ 				<input type="checkbox" name="checkbox" id="second-check" value="Second">
+ 				<label for="second-check">Watching youtube</label><br>
+
+ 				<input type="checkbox" name="checkbox" id="third-check" value="Third">
+ 				<label for="third-check">IT courses/bootcamps</label><br>
+
+ 				<input type="checkbox" name="checkbox" id="fourth-check" value="Fourth">
+ 				<label for="fourth-check">Personal mentorship</label><br>
+
+ 				<input type="checkbox" name="checkbox" id="fifth-check" value="Fifth">
+ 				<label for="fifth-check">Any way is good, passion required</label>
+
+ 			</fieldset>
+ 			<fieldset id="final">
+ 				<p>Any additional comments or suggestions?</p>
+ 				<textarea rows="4" placeholder="Enter your comments here..."></textarea><br>
+ 				<input type="submit" name="submit" id="submit" value="Submit">
+ 			</fieldset>
+ 		</form>
+ 	</div>
+ </body>
+ </html>

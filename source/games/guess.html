@@ -58,10 +58,11 @@
 				<section>
 					<h1 class="maintext">Игра Угадайка</h1>
 					<div class="box">
-						<p id="info">Угадайте число от 0 до 100</p>
-						<input type="text" id="userAnswer">
+						<p id="info"></p>
+						<input type="text" id="userAnswer" placeholder="Угадайте число от 0 до 100">
 						<br>
-						<button type="button" onClick="guess();" id="button">Начать</button>
+						<button type="button" onClick="guess();" id="button">Угадать</button>
+						<button type="reset" onClick="document.location.reload(true);" value="Сбросить">Сбросить</button>
 					</div>
 				</section>
 			</main>

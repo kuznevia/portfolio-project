@@ -7,14 +7,16 @@
 	<link rel="icon" href="img/agent_smith.png" type="image/x-icon">
 	<script type="text/javascript">
 
+		
+
 		function generate(){
 			var passwordLength = readInt();
 			var password = '';
 			var letter;
 			var digit;
 			var possible = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-=#!%$*";
-			var copy = document.querySelector('#copy');
 			document.getElementById("password").innerHTML = '';
+			var copy = document.querySelector('#copy');
 
 			for (var i = 0; i < passwordLength; i++) {
 				var random = parseInt(Math.random() * 100);
@@ -48,6 +50,8 @@
 		function reset(){
 			document.getElementById("password").innerHTML = '';
 			document.getElementById("length").value = '';
+			var copy = document.querySelector('#copy');
+			copy.classList.add('hidden');
 		}
 
 	</script>
@@ -67,7 +71,7 @@
 					<h1 class="maintext">Генератор случайных паролей</h1>
 					<div class="box">
 						<input type="text" id="length" placeholder="Введите длину пароля">
-						<h3 id="password"></h3>
+						<p id="password"></p>
 						<button type="button" onClick="generate();" id="button">Сгенерировать</button>
 						<button type="reset" onClick="reset()" value="Сбросить">Сбросить</button>
 						<button type="button" onClick="copy();" id="copy" class="hidden">Копировать</button>

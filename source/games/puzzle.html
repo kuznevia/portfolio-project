@@ -32,6 +32,10 @@
 			document.getElementById(id).style.display = "none";
 		}
 
+		function show(id){
+			document.getElementById(id).style.display = "initial";
+		}
+
 		function checkAnswers (){
 			
 		checkAnswer("userAnswer1",  ["лампочка", "лампа"]);
@@ -41,36 +45,42 @@
 
 			if (score == numberOfRiddles) {
 				
-			write("Вы ответили на все " + numberOfRiddles + " загадки правильно. Поздравляю!" );
+			write('Вы ответили на все ' + numberOfRiddles + ' загадки правильно. Поздравляю!' );
 			hide ('button');
 			hide ('userAnswer1');
 			hide ('userAnswer2');
 			hide ('userAnswer3');
-			hide ('info2');	
-			hide ('info3');
 				
 			} else if (score < numberOfRiddles && score > 0) {
 
-			write("Вы ответили на " + score + " из " + numberOfRiddles + " загадки правильно.<br> Попробуйте еще раз. Нажмите F5." );
-			hide ('button');
-			hide ('userAnswer1');
-			hide ('userAnswer2');
-			hide ('userAnswer3');
-			hide ('info2');	
-			hide ('info3');
+			write('Вы ответили на ' + score + ' из ' + numberOfRiddles + ' загадки правильно.<br> Попробуйте еще раз. Нажмите "Сбросить"' );
+			hide('button');
+			hide('userAnswer1');
+			hide('userAnswer2');
+			hide('userAnswer3');
 			} else {
 
-			write("Вы не ответили ни на одну из "  + numberOfRiddles + " загадок правильно.<br> Попробуйте еще раз. Нажмите F5" );
-			hide ('button');
-			hide ('userAnswer1');
-			hide ('userAnswer2');
-			hide ('userAnswer3');
-			hide ('info2');	
-			hide ('info3');
-
+			write('Вы не ответили ни на одну из '  + numberOfRiddles + ' загадок правильно.<br> Попробуйте еще раз. Нажмите "Сбросить"' );
+			hide('button');
+			hide('userAnswer1');
+			hide('userAnswer2');
+			hide('userAnswer3');
 		    }
 
 		}
+
+		function reset(){
+			document.getElementById("info").innerHTML = '';
+			document.getElementById("userAnswer1").value = '';
+			document.getElementById("userAnswer2").value = '';
+			document.getElementById("userAnswer3").value = '';
+			show('button');
+			show('userAnswer1');
+			show('userAnswer2');
+			show('userAnswer3');
+		}
+
+
 	
 	</script>
 </head>
@@ -88,16 +98,12 @@
 				<h1 class="maintext">Игра в загадки</h1>
 				<div class="box">
 
-					<p id="info">Висит груша нельзя скушать</p>
-					<input type="text" id="userAnswer1">
-
-					<p id="info2">Зимой и летом одним цветом</p>
-					<input type="text" id="userAnswer2">
-
-					<p id="info3">Туда-сюда-обратно, тебе и мне приятно</p>
-					<input type="text" id="userAnswer3"><br>
-
+					<p id="info"></p>
+					<input type="text" id="userAnswer1" placeholder="Висит груша нельзя скушать">
+					<input type="text" id="userAnswer2" placeholder="Зимой и летом одним цветом">
+					<input type="text" id="userAnswer3" placeholder="Туда-сюда-обратно, тебе и мне приятно"><br>
 					<button type="button" onClick="checkAnswers();" id="button">Ответить</button>
+					<button type="reset" onClick="document.location.reload(true);" value="Сбросить">Сбросить</button>
 				</div>			
 			 </main>
 		</div>
