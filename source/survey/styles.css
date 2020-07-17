@@ -27,14 +27,11 @@ textarea {
 	height: 35px;
 	font-size: 15px;
 	box-sizing:border-box;
-	margin-bottom: 5px;
+	margin-bottom: 25px;
 	border:1px solid transparent;
 	border-radius: 5px;
 }
 
-#survey-form label {
-
-}
 
 #content {
 	text-align: center;
