@@ -58,3 +58,22 @@ textarea {
 	font-size: 16px;
 	color:white;
 }
+
+@media (max-width: 800px) {
+	#survey-form {
+		font-size: 24px;
+	}
+	#personal-info input,
+	#final input,
+	.drop,
+	textarea {
+		font-size: 24px;
+		height: 55px;
+		margin-bottom: 35px;
+		width:100%;
+	}
+
+	.add-info {
+		font-size: 18px;
+	}
+}
