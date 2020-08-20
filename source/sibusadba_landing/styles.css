@@ -1,0 +1,225 @@
+body {
+	color:white;
+	font-weight:bold;
+	margin:0;
+	font-family: PF BeauSans Pro, sans-serif;
+}
+
+#wrapper {
+
+
+	/*
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows:100px 1fr 1fr 1fr 100px;
+	*/
+}
+
+#header,
+#footer {
+	display: flex;
+	min-height: 100px;
+	background-color: #007084;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#header-tagline,
+#footer-tagline {
+	display: flex;
+	align-items: center;
+	max-height:65px;
+	margin:5px 0;
+}
+
+#header-tagline p,
+#footer-tagline p {
+	margin:0 0 0 10px;
+	font-size: 18px;
+}
+
+.yellow-tag {
+	color:#FFD700;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+input {
+	margin-top:10px;
+	background-color: #ff6600;
+	color: white;
+	border-radius: 15px;
+	border-color:transparent;
+	padding: 5px 15px;
+}
+
+input:hover {
+	cursor: pointer;
+}
+
+.phone-number {
+	color:white;
+	font-size: 20px;
+}
+
+#header-info,
+#footer-info {
+	font-weight: normal;
+	font-size: 12px;
+	display:none;
+}
+
+@media (min-width: 700px) {
+	#header-info,
+	#footer-info {
+	font-weight: normal;
+	font-size: 16px;
+	display: block;
+	}
+}
+
+
+#teaser-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 750px;
+	background-image:url(img/gavrilkovo2.jpg);
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#teaser {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:rgba(0, 112, 132, 0.8);
+	text-align: center;
+	padding: 30px 45px;
+}
+
+
+#teaser p {
+	font-weight: normal;
+}
+
+#technology-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #007084;
+	text-align: center;
+
+	/*
+	border:3px solid red;
+	*/
+}
+
+h2 {
+	text-align: center;
+	font-size: 32px;
+	/*
+	border:3px solid blue;
+	*/
+}
+
+#techlist {
+	margin:0;
+	padding:0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* 
+	border:3px solid purple;
+	*/
+}
+
+.tech-caption-1 {
+	background-image:url(img/1.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.tech-caption-2 {
+	background-image:url(img/2.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.tech-caption-3 {
+	background-image:url(img/3.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.tech-caption {
+	flex-basis:300px;
+	height:350px;
+	margin:20px 35px;
+	list-style: none;
+	/*
+	display: flex;
+	height: 340px;
+	width: 15vw;
+	flex-direction: column;
+	justify-content: center;
+	border:3px solid green;
+	*/
+}
+
+
+.main-disc {
+	text-align: center;
+	margin-bottom: 60px;
+	margin-top: 40px;
+	padding-top: 15px;
+	background-color: rgba(23, 23, 23, 0.4);
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.add-disc {
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+.techlist-input {
+	border-radius: 0;
+	text-decoration: underline;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 1px solid white;
+	font-weight: 900;
+	padding: 10px 20px;
+	font-size: 12px;
+}
+
+.center-input {
+	width: 170px;
+	align-self: center;
+	margin-bottom: 20px;
+}
+
+#advantage-container {
+	color:#007084;
+	text-align: center;
+}
+
+#advantages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/*
+	border:3px solid red;
+	*/
+}
+
+.advantages-figure {
+	flex-basis: 25%;
+}
