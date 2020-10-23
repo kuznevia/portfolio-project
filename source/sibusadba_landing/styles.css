@@ -62,6 +62,15 @@ input:hover {
 	font-size: 20px;
 }
 
+.change-language {
+	position: absolute;
+	top:0;
+	right:0;
+	color:white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
 #header-info,
 #footer-info {
 	font-weight: normal;
