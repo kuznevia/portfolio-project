@@ -27,7 +27,7 @@
     }
 }
 
-@mixin margin ($top:0px, $right:0px, $bottom:0px, $left:0px) {
+@mixin margin ($top:0px, $right:$top, $bottom:$top, $left:$right) {
     margin:$top $right $bottom $left;
 }
 
@@ -39,6 +39,10 @@
 @mixin margin-top-bottom($margin:0px) {
     margin-top:$margin;
     margin-bottom:$margin;
+}
+
+@mixin padding ($top:0px, $right:$top, $bottom:$top, $left:$right) {
+    padding:$top $right $bottom $left;
 }
 
 @mixin padding-left-right($margin:0px) {
@@ -180,23 +184,23 @@
 }
 
 .bg-primary {
-    background:$bg-primary;
+    background:$primary;
 }
 
 .bg-secondary {
-    background:$bg-secondary;
+    background:$secondary;
 }
 
 .bg-thirdly {
-    background:$bg-thirdly;
+    background:$thirdly;
 }
 
 .bg-fourthly {
-    background:$bg-fourthly;
+    background:$fourthly;
 }
 
 .bg-fiftly {
-    background:$bg-fiftly;
+    background:$fiftly;
 }
 
 .bg-transparent {

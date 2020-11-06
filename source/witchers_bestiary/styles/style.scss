@@ -1,0 +1,45 @@
+$primary:#000;
+$secondary:#fff;
+$thirdly:#303846;
+$fourthly: #09d3ac;
+$fiftly:#30f;
+$nav-width:300px;
+
+@import "../../../templates/kuznevia/sass/kuznevia.scss";
+
+* {
+    background: $primary;
+    color:$secondary;
+    text-decoration: none;
+    font-family: Mason Chronicles;
+    font-size: 18px;
+}
+
+.container {
+    @include flex;
+    
+}
+
+.navbar {
+    @include flex(flex-start, stretch, column, wrap);
+    width:$nav-width;
+    position: fixed;
+}
+
+.header {
+    font-size:32px;
+
+    &-nav {
+        @include margin-top-bottom(15px);
+    }
+}
+
+.nav-link {
+    @include padding(10px, 15px);
+    border-top:1px solid $secondary;
+    border-bottom:1px solid $secondary;
+}
+
+.main-doc {
+    margin-left:$nav-width;
+}

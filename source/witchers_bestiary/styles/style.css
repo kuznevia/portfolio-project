@@ -748,7 +748,7 @@
 }
 
 .bg-secondary {
-  background: #f7f7f7;
+  background: #fff;
 }
 
 .bg-thirdly {
@@ -777,6 +777,50 @@
 
 .fw-bold {
   font-weight: bold;
+}
+
+* {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: Mason Chronicles;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  position: fixed;
+}
+
+.header {
+  font-size: 32px;
+}
+.header-nav {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.nav-link {
+  padding: 10px 15px 10px 15px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.main-doc {
+  margin-left: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
