@@ -1,94 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">	
-	<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
-	<link rel="stylesheet" href="styles.css">
-	<title>kuznevia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witcher's bestiary</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="fonts/Mason_Chronicles/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-	<header class="page-header">
-		<div> Contact details </div>
-		<a class="header-email" href="mailto:via.kuznetsov@gmail.com">via.kuznetsov@gmail.com</a>
-		<a class="header-phone" href="tel:+7-968-180-03-73">+7-968-180-03-73</a>
-	</header>
-
-	<main>
-		<h1>Главная</h1>
-		<section>
-			<h2>Обо мне</h2>
-				<figure class="portrait">
-					<img src="img/photo.jpg">
-				</figure>
-				<p>Текст, история, опыт, ссылки везде подряд</p>
-		</section>
-		
-		<section>
-			<h2> Портфолио моих работ на текущий момент</h2>
-			<table class="portfolio-list">
-				<tr>
-					<td>
-					<a href="source/keks/index.html">Магазин Кекса</a>  
-					<figure>
-						<img src="img/keks.jpg">
-						<figcaption>Первый полу-проект с сайта html academy. По большому счету нельзя назвать проектом, потому меня за руку протянули по каждому шагу, но все равно голову включать приходилось.</figcaption>
-					</figure>
-					</td>
-					<td>
-					<a href="source/kvas/index.html">Кваст</a>
-					<figure>
-						<img src="img/kvas.jpg">
-						<figcaption>Проект-испытание на htmlacademy, который я делаю с нуля самостоятельно, в отличие от первого.</figcaption>
-					</figure>
-					</td>
-				</tr>
-				<tr>
-					<td>
-					<a href="source/tribute_page/index.html">Tribute Page Kobe Bryant (HTML/CSS)</a>
-					<figure>
-						<img src="img/kobe.jpg">
-						<figcaption>Страничка в память о Коби Брайанте</figcaption>
-					</figure>
-					</td>
-					<td>
-					<a href="source/games/index.html">Игры (HTML/CSS/JS)</a>
-					<figure>
-						<img src="img/riddles.png">
-						<figcaption>Несколько игр, которые я написал сам</figcaption>
-					</figure>
-					</td>
-				</tr>
-				<tr>
-					<td>
-					<a href="source/survey/index.html">Форма опроса (HTML/CSS)</a>
-					<figure>
-						<img src="img/survey.png">
-						<figcaption>Простейшая форма с опросом</figcaption>
-					</figure></td>
-					<td><a href="source/sibusadba_landing/index.html">Лэндинг Сибирской усадьбы на двух языках</a>
-					<figure>
-						<img src="#">
-						<figcaption>Лэндинг на чистом HTML/CSS (flex как основа)</figcaption>
-					</figure></td>
-				</tr>	
-			</table>
-			
-				
-				
-			
-		
-		</section>
-		<section>
-			<h2>Блог из FMCG в IT </h2>
-			<p>Краткое описание блога</p>
-		</section>
-	</main>
-
-	<footer class="page-footer">
-		Copyright &copy; kuznevia
-	</footer>
-
+    <nav class="navbar" id="navbar">
+        <header class="header header-nav align-self-center">
+            Witcher's bestiary <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d7efe4cd-d38b-4fe7-b61e-b7f5009ea250/d7tjk8e-0ad6d461-673c-4ba4-a127-55bf5407b2bb.png/v1/fill/w_1600,h_1525,q_80,strp/the_witcher_3__wild_hunt_logo__original_sticker__by_kejo13_d7tjk8e-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNTI1IiwicGF0aCI6IlwvZlwvZDdlZmU0Y2QtZDM4Yi00ZmU3LWI2MWUtYjdmNTAwOWVhMjUwXC9kN3RqazhlLTBhZDZkNDYxLTY3M2MtNGJhNC1hMTI3LTU1YmY1NDA3YjJiYi5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.OOjpOTmG5c8lu1dYFcc0K3GUqYphR2ttgSlZVbn5eow" alt="witcher_logo">
+        </header>
+        <ul class="nav-list">
+            <li><a class="nav-link" href="#Introduction" >Introduction</a></li>
+            <li><a class="nav-link" href="#Vampire">Vampire</a></li>
+            <li><a class="nav-link" href="#Draconid">Draconid</a></li>
+            <li><a class="nav-link" href="#Elementa">Elementa</a></li>
+            <li><a class="nav-link" href="#Last">Last</a></li>
+        </ul>
+    </nav>
+    <main class="main-doc" id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header class="header header-main">
+                Introduction
+            </header>
+            <article>
+                <p>A bestiary is usually a volume containing information on different creatures, either living or mythical, depending on the focus of the treatise. Monsters can be broken down into distinct <b>Classes</b>, such as:</p>
+                <ul>
+                    <li><a class="main-link" href="#Vampire">Vampire</a></li>
+                    <li><a class="main-link" href="#Draconid">Draconid</a></li>
+                    <li><a class="main-link" href="#Elementa">Elementa</a></li>
+                </ul>
+                <p>Witchers see monsters as things they must slay, often those that react to silver negatively are considered monsters. As well creatures of magical or dark origin are also normally considered to be monsters.</p>
+                <p>Some monsters are welcomed by humans and others due to their benefits, such as trolls whose ability to build and repair things make them valuable additions to rural societies.</p>
+            </article>
+        </section>
+        <section id="Vampire" class="main-section">
+            <header class="header header-main">
+                Vampire
+            </header>
+            <article>
+                <code>
+                    <img class="quote-left" src="https://static.wikia.nocookie.net/witcher/images/0/09/Big_Quote_Left.png" alt="quote_left">
+                    <blockquote>
+                        <p>The moon shines bright,</p>
+                        <p>The vampire alights</p>
+                        <p>Swish, swish goes his cloak...</p>
+                        <p>Maiden, are you not afeared?</p>
+                    </blockquote> 
+                    <cite>- pg. 143 <a class="main-link" href="https://witcher.fandom.com/wiki/Baptism_of_Fire"> Baptism of Fire</a> (UK edition)
+                    </cite>
+                    <img class="quote-right" src="https://static.wikia.nocookie.net/witcher/images/c/c5/Big_Quote_Right.png" alt="quote_right">
+                </code>
+                <figure>
+                    <img src="https://static.wikia.nocookie.net/witcher/images/7/71/Tw3_Higher_Vampires_%28Detlaff%2C_Regis%2C_Orianna%29.png" alt="vampire_human_form">
+                    <figcaption>Human Form</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.wikia.nocookie.net/witcher/images/f/fd/Vampires.png" alt="vampire_vampire_form">
+                    <figcaption>Vampire Form</figcaption>
+                </figure>
+                <p>Vampire is a hypernym used to refer to a number of creatures that thrive on blood, which contains their victims' life force.</p>
+                <p>Vampires in Sapkowski's works break with many popular stereotypes. In particular, vampire repellents such as holy water, crucifixes, garlic, wooden stakes, etc. are nothing but folklore within the Witcher saga. For example, Regis, the vampire who accompanies Geralt for a time, was once decapitated, staked through the heart, sprinkled with holy water and finally buried, but that did not prevent him from regenerating, albeit slowly.</p>
+                <ul>
+                    <p class="big-font-size">Vampire species:</p>
+                    <li>
+                        Higher grades:
+                        <ul>
+                            <li><a href="https://witcher.fandom.com/wiki/Higher_Vampire" class="main-link">Higher vampire</a></li>
+                            <li><a href="https://witcher.fandom.com/wiki/Alp" class="main-link">Alp</a></li>
+                            <li><a href="https://witcher.fandom.com/wiki/Katakan" class="main-link">Katakan</a></li>
+                            <li><a href="https://witcher.fandom.com/wiki/Mula" class="main-link">Mula</a></li>
+                            <li><a href="https://witcher.fandom.com/wiki/Bruxa" class="main-link">Bruxa</a></li>
+                            <li><a href="https://witcher.fandom.com/wiki/Nosferat" class="main-link">Nosferat</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Lower grades:
+                        <ul>
+                            <li><a href="https://witcher.fandom.com/wiki/Ekimma" class="main-link">Ekimma</a></li> 
+                            <li><a href="https://witcher.fandom.com/wiki/Fleder" class="main-link">Fleder</a></li>
+                            <li><a href="https://witcher.fandom.com/wiki/Garkain" class="main-link">Garkain</a></li>
+                            <li><a href="https://witcher.fandom.com/wiki/Plumard" class="main-link">Plumard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <figure class="flex-end">
+                    <img src="https://static.wikia.nocookie.net/witcher/images/9/91/Tw3_cardart_neutral_emiel_dlc.png" alt="higher_vampire_bat_form">
+                    <figcaption>Bat Form</figcaption>
+                </figure>
+                <figure class="flex-end">
+                    <img src="https://static.wikia.nocookie.net/witcher/images/d/da/Gwent_cardart_monsters_bruxa.jpg" alt="bruxa">
+                    <figcaption>Bruxa</figcaption>
+                </figure>
+                <figure class="flex-end">
+                    <img src="https://static.wikia.nocookie.net/witcher/images/2/23/Gwent_cardart_monsters_gael.jpg" alt="katakan">
+                    <figcaption>Katakan</figcaption>
+                </figure>
+                <code>
+                    <img class="quote-left" src="https://static.wikia.nocookie.net/witcher/images/0/09/Big_Quote_Left.png" alt="quote_left">
+                    <blockquote>
+                        <p>A vampire, or upir, is a dead person brought to life by Chaos. Having lost its first life, a v. enjoys its second life during the night hours. It leaves its grave by the light of the moon and only under its light may it act, assailing sleeping maidens or young swains, who it wakes not, but whose blood it sucks.</p>
+                    </blockquote> 
+                    <cite>- pg. 143 <a class="main-link" href="https://witcher.fandom.com/wiki/Baptism_of_Fire"> Baptism of Fire</a> (UK edition)
+                    </cite>
+                    <img class="quote-right" src="https://static.wikia.nocookie.net/witcher/images/c/c5/Big_Quote_Right.png" alt="quote_right">
+                </code>
+                <figure class="flex-end">
+                    <img src="https://static.wikia.nocookie.net/witcher/images/0/03/Gwent_cardart_monsters_queen_of_the_night.png" alt="queen_of_the_night">
+                    <figcaption><a class="main-link" href="https://witcher.fandom.com/wiki/Queen_of_the_Night">Queen of the Night</a></figcaption>
+                </figure>
+                <code class="flex-end">
+                    <img class="quote-left" src="https://static.wikia.nocookie.net/witcher/images/0/09/Big_Quote_Left.png" alt="quote_left">
+                    <blockquote>
+                        <p>"Don't scoff. You can't be a stranger to vampire bite marks. Ever come across a case of a vampire ripping its victim to shreds?"</p>
+                        <p>"No. That never happens."</p>
+                        <p>"In the case of higher vampires — never, I agree," Emiel Regis said softly. "From what I know alpors, moolas, bruxas and nosferats don't mutilate their victims. On the other hand, fleders and ekimmas are pretty brutal with their victims' remains."
+                        </p>
+                    </blockquote> 
+                    <cite>- pg. 151 <a class="main-link" href="https://witcher.fandom.com/wiki/Baptism_of_Fire"> Baptism of Fire</a> (UK edition)
+                    </cite>
+                    <img class="quote-right" src="https://static.wikia.nocookie.net/witcher/images/c/c5/Big_Quote_Right.png" alt="quote_right">
+                </code>
+            </article>
+        </section>
+        <section id="Draconid" class="main-section">
+            <header class="header header-main">
+                Draconid
+            </header>
+            <article>
+                <code class="flex-grow-0-7">
+                    <img class="quote-left" src="https://static.wikia.nocookie.net/witcher/images/0/09/Big_Quote_Left.png" alt="quote_left">
+                    <blockquote>
+                        <p>The draconids are a quite numerous order—even proper dragons alone number at least half a dozen species. Both they and the lesser draconids have inhabited these lands from time immemorial, forming an important branch of our ecosystem. As human cities and villages grew, and grazing and farming lands expanded, collisions between territories inhabited by draconids and those inhabited by humans became increasingly frequent. These predators quickly learned that herds of cattle and swine are a readily accessible source of food, which, in turn, led to attempts to exterminate them by any means avaible.</p>
+                    </blockquote> 
+                    <cite> <a class="main-link" href="https://witcher.fandom.com/wiki/Geralt_of_Rivia">Geralt of Rivia</a>, <a class="main-link" href="https://witcher.fandom.com/wiki/The_World_of_the_Witcher">The World of the Witcher</a>
+                    </cite>
+                    <img class="quote-right" src="https://static.wikia.nocookie.net/witcher/images/c/c5/Big_Quote_Right.png" alt="quote_right">
+                </code>
+                <figure>
+                    <img src="https://static.wikia.nocookie.net/witcher/images/d/d1/Gwent_cardart_monsters_forktail.jpg" alt="dragon_forktail">
+                    <figcaption>Forktail</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.wikia.nocookie.net/witcher/images/d/d1/Gwent_cardart_neutral_myrgtabrakke.jpg" alt="green_dragon">
+                    <figcaption>Green Dragon</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.wikia.nocookie.net/witcher/images/3/3c/Gwent_cardart_skellige_dracoturtle.png" alt="dracoturtle">
+                    <figcaption>Dracoturtle</figcaption>
+                </figure>
+                <p>Draconids is a diverse order of quasi-reptiles that often cause trouble to humanoid races.</p>
+                <p>While the creature most commonly associated with draconids is dragon, the most populous members of this order are actually the so-called lesser draconids, which include dracolizards (slyzards), forktails and wyverns. They may be easily confused with dragons, as they share scaly skin or armor made up of bony plates, bat wings, and reptilian maws, legs, and tails. They are smaller and less intelligent than dragons, and often possess atrophied forelegs, to the point that certain species have none at all.</p>
+                <p>Dragons, in turn, are larger, possess two pairs of well-developed legs, huge wings and tail, and obvious intelligence. However, mutations from this scheme exist.</p>
+                <ul>
+                    <p class="big-font-size">Draconid species:</p>
+                    <li><a href="https://witcher.fandom.com/wiki/Dragon" class="main-link">Dragon</a></li>
+                    <li><a href="https://witcher.fandom.com/wiki/Dracolizard" class="main-link">Dracolizard</a></li>
+                    <li><a href="https://witcher.fandom.com/wiki/Dracoturtle" class="main-link">Dracoturtle</a></li>
+                    <li><a href="https://witcher.fandom.com/wiki/Flying_drake" class="main-link">Flying_drake</a></li>
+                    <li><a href="https://witcher.fandom.com/wiki/Nidhogg" class="main-link">Nidhogg</a></li>
+                    <li><a href="https://witcher.fandom.com/wiki/Ornitodracon" class="main-link">Ornitodracon</a></li>
+                    <li><a href="https://witcher.fandom.com/wiki/Sea_serpent" class="main-link">Sea_serpent</a></li>
+                    <li><a href="https://witcher.fandom.com/wiki/Vigilosaur" class="main-link">Vigilosaur</a></li>
+                    <li><a href="https://witcher.fandom.com/wiki/Wyvern" class="main-link">Wyvern</a></li>
+                </ul>
+                <figure>
+                    <img src="https://static.wikia.nocookie.net/witcher/images/8/89/Gwent_cardart_neutral_villentretenmerth.jpg" alt="golden_gragon">
+                    <figcaption>Golden Dragon</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.wikia.nocookie.net/witcher/images/b/b5/Gwent_cardart_monsters_keltullis_claws.png" alt="red_dragon">
+                    <figcaption>Red Dragon</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://static.wikia.nocookie.net/witcher/images/b/b4/Tw3map_Sea_monster.png" alt="sea_serpent">
+                    <figcaption>Sea Serpent</figcaption>
+                </figure>
+            </article>
+        </section>
+        <section id="Elementa" class="main-section">
+            <header class="header header-main">
+                Elementa
+            </header>
+            <article>
+                <p>Witchers see monsters as things they must slay, often those that react to silver negatively are considered monsters. s well creatures of magical or dark origin are also normally considered to be monsters. Some monsters are welcomed by humans and others due to their benefits, such as trolls whose ability to build and repair things make them valuable additions to rural societies.</p>
+                <p>A bestiary is usually a volume containing information on different creatures, either living or mythical, depending on the focus of the treatise. Monsters can be broken down into distinct Classes. These help to further discern differences and similarities between Creatures and Monsters. </p>
+            </article>
+        </section>
+        <section id="Last" class="main-section">
+            <header class="header header-main">
+                Elementa
+            </header>
+            <article>
+                <p>Witchers see monsters as things they must slay, often those that react to silver negatively are considered monsters. s well creatures of magical or dark origin are also normally considered to be monsters. Some monsters are welcomed by humans and others due to their benefits, such as trolls whose ability to build and repair things make them valuable additions to rural societies.</p>
+                <p>A bestiary is usually a volume containing information on different creatures, either living or mythical, depending on the focus of the treatise. Monsters can be broken down into distinct Classes. These help to further discern differences and similarities between Creatures and Monsters. </p>
+            </article>
+        </section>
+    </main>
 </body>
-
 </html>
