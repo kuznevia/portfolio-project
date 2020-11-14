@@ -1,1 +1,1 @@
-some changes in readme
+Separate branch for Witcher's Bestiary project

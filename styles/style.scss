@@ -6,7 +6,7 @@ $fiftly:#ff1a57;
 $sixthly:green;
 $nav-width:300px;
 
-@import "../../../templates/kuznevia/sass/kuznevia.scss";
+@import "../templates/kuznevia/sass/kuznevia.scss";
 
 
 body {
@@ -28,11 +28,7 @@ body {
     
     .header {
         font-size:32px;
-        
-    
-        &-nav {
-            text-align: center;
-        }
+        text-align: center;
     
         img {
             height:50px;
@@ -71,6 +67,10 @@ body {
 .main-doc {
     margin-left:$nav-width + 3px;
     @include padding(20px, 40px);
+
+    .header {
+        font-size:32px;    
+    }
 
     section {
         article {

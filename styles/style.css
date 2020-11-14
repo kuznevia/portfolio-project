@@ -22,8 +22,6 @@ body {
 }
 .navbar .header {
   font-size: 32px;
-}
-.navbar .header-nav {
   text-align: center;
 }
 .navbar .header img {
@@ -55,6 +53,9 @@ body {
 .main-doc {
   margin-left: 303px;
   padding: 20px 40px 20px 40px;
+}
+.main-doc .header {
+  font-size: 32px;
 }
 .main-doc section article {
   padding: 15px 15px 15px 15px;
