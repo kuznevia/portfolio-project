@@ -73,6 +73,10 @@ body {
 }
 .main-doc section article ul {
   margin-left: 45px;
+  align-self: flex-start;
+}
+.main-doc section article ul.flex-basis-15 {
+  flex-basis: 15%;
 }
 .main-doc section article code {
   display: flex;
@@ -119,6 +123,7 @@ body {
 }
 .main-doc section article figure img {
   height: 250px;
+  width: 200px;
   margin-left: 15px;
   margin-right: 15px;
 }

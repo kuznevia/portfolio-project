@@ -87,6 +87,11 @@ body {
 
             ul {
                 margin-left: 45px;
+                align-self: flex-start;
+
+                &.flex-basis-15 {
+                    flex-basis:15%;
+                }
             }      
 
             code {
@@ -136,12 +141,14 @@ body {
 
                 img {
                     height:250px;
+                    width:200px;
                     @include margin-left-right (15px);
                 }
 
                 &.flex-end {
                     align-self: flex-end;
                 }
+                
             }
 
             .main-link {
