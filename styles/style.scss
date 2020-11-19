@@ -236,4 +236,28 @@ body {
         margin-left:0;
         margin-top:$nav-mobile-height + 3px;
     }
+
+}
+
+@media (max-width:500px) {
+    .media-500-grid {
+        grid-template-areas: 
+        "p"
+        "ul-first"
+        "figure-first"
+        "ul-second" 
+        "figure-second"
+        "ul-third"
+        "figure-third"
+        "ul-fourth" 
+        "figure-fourth"
+        "ul-fifth"
+        "figure-fifth"
+        "ul-sixth" 
+        "figure-sixth"
+        "ul-seventh" 
+        "figure-seventh";
+
+        justify-items: start;
+    }
 }
