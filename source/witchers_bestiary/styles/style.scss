@@ -5,12 +5,11 @@ $fourthly: #9e8af4;
 $fiftly:#ff1a57;
 $sixthly:green;
 $nav-width:300px;
+$nav-mobile-height:300px;
+$header-mobile-height:30px;
 
-@import "../../../templates/kuznevia/sass/kuznevia.scss";
+@import "../templates/kuznevia/sass/kuznevia.scss";
 
-* {
-
-}
 
 body {
     text-decoration: none;
@@ -29,52 +28,54 @@ body {
     height:100%;
     border-right:3px solid $secondary;
     
-}
-
-.header {
-    font-size:32px;
-    
-
-    &-nav {
+    .header {
+        font-size:32px;
         text-align: center;
+    
+        img {
+            height:50px;
+        }
+    }    
+
+    .nav-list {
+        height: 88%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    
+        li {
+            @include padding(10px, 15px);
+            border-top:1px solid $secondary;
+            border-bottom:1px solid $secondary;
+            position: relative;
+            width: 100%;
+        }
+
+        .nav-link {
+            color:$fourthly;
+            transition: 0.5s linear;
+            text-decoration: none;
+            font-size:24px;
+        
+            &:hover {
+                color:$fiftly;
+                text-decoration: underline;
+            }
+        }
+     
     }
 
-    img {
-        height:50px;
-    }
-}
-
-.nav-list {
-    height: 88%;
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    li {
-        @include padding(10px, 15px);
-        border-top:1px solid $secondary;
-        border-bottom:1px solid $secondary;
-        position: relative;
-        width: 100%;
-    }
- 
-}
-
-.nav-link {
-    color:$fourthly;
-    transition: 0.5s linear;
-
-    &:hover {
-        color:$fiftly;
-        text-decoration: underline;
-    }
 }
 
 .main-doc {
     margin-left:$nav-width + 3px;
     @include padding(20px, 40px);
 
-    section {
-        article {
+    .header {
+        font-size:32px;    
+    }
+
+    .main-section {
+        .main-article {
             @include padding(15px);
             @include flex (space-between, center, row, wrap);
             
@@ -88,6 +89,11 @@ body {
 
             ul {
                 margin-left: 45px;
+                align-self: flex-start;
+
+                &.flex-basis-20 {
+                    flex-basis:20%;
+                }
             }      
 
             code {
@@ -100,6 +106,7 @@ body {
                 
                 p {
                     margin:0;
+                    flex-grow:1;                    
                 }
 
                 cite {
@@ -137,13 +144,120 @@ body {
 
                 img {
                     height:250px;
+                    width:200px;
                     @include margin-left-right (15px);
                 }
 
                 &.flex-end {
                     align-self: flex-end;
                 }
+                
+            }
+
+            .main-link {
+                color:$fourthly;
+                transition: 0.5s linear;
+                text-decoration: none;
+            
+                &:hover {
+                    color:$fiftly;
+                    text-decoration: underline;
+                }
             }
         }
+    }
+}
+
+@media (max-width:1350px) {
+    .media-flex-grow-1 {
+        flex-grow:1;
+    }
+
+   .media-flex-basis-100-1350 {
+       flex-basis:100%;
+   }
+
+   .media-hidden-1350 {
+       display: none;
+   }
+}
+
+@media (max-width:1110px) {
+    .media-hidden-1110 {
+        display: none; 
+    }
+}
+
+@media (max-width:1050px) {
+    .media-hidden-1050 {
+        display: none; 
+    }
+
+    .media-flex-basis-100-1050 {
+        flex-basis:100%;
+    }
+
+    .media-1050-grid {
+        display: grid !important;
+        padding:0 !important;
+        margin:0 !important;
+        grid-template-areas: 
+        "p p"
+        "ul-first figure-first"
+        "ul-second figure-second"
+        "ul-third figure-third"
+        "ul-fourth figure-fourth"
+        "ul-fifth figure-fifth"
+        "ul-sixth figure-sixth"
+        "ul-seventh figure-seventh";
+
+        p {
+            grid-area:p;
+        }
+    }
+
+}
+
+@media (max-width:900px) {
+    .navbar {
+        height: $nav-mobile-height;
+        position: absolute;
+        top:0px;
+        width:100%;
+        
+
+        .nav-list {
+            height: 240px;
+        }
+
+    }
+
+    .main-doc {
+        margin-left:0;
+        margin-top:$nav-mobile-height + 3px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .media-500-grid {
+        grid-template-areas: 
+        "p"
+        "ul-first"
+        "figure-first"
+        "ul-second" 
+        "figure-second"
+        "ul-third"
+        "figure-third"
+        "ul-fourth" 
+        "figure-fourth"
+        "ul-fifth"
+        "figure-fifth"
+        "ul-sixth" 
+        "figure-sixth"
+        "ul-seventh" 
+        "figure-seventh";
+
+        justify-items: start;
     }
 }
