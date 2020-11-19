@@ -5,6 +5,8 @@ $fourthly: #9e8af4;
 $fiftly:#ff1a57;
 $sixthly:green;
 $nav-width:300px;
+$nav-mobile-height:300px;
+$header-mobile-height:30px;
 
 @import "../templates/kuznevia/sass/kuznevia.scss";
 
@@ -214,4 +216,24 @@ body {
         }
     }
 
+}
+
+@media (max-width:900px) {
+    .navbar {
+        height: $nav-mobile-height;
+        position: absolute;
+        top:0px;
+        width:100%;
+        
+
+        .nav-list {
+            height: 240px;
+        }
+
+    }
+
+    .main-doc {
+        margin-left:0;
+        margin-top:$nav-mobile-height + 3px;
+    }
 }

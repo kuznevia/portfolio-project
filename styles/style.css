@@ -178,5 +178,21 @@ body {
     grid-area: p;
   }
 }
+@media (max-width: 900px) {
+  .navbar {
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+  .navbar .nav-list {
+    height: 240px;
+  }
+
+  .main-doc {
+    margin-left: 0;
+    margin-top: 303px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
