@@ -1,11 +1,11 @@
 $primary:#000;
 $secondary:#fff;
-$thirdly:#242424;
+$thirdly:#121212;
 $fourthly: #9e8af4;
 $fiftly:#ff1a57;
 $sixthly:green;
 $nav-width:300px;
-$nav-mobile-height:300px;
+$nav-mobile-height:350px;
 $header-mobile-height:30px;
 
 @import "../templates/kuznevia/sass/kuznevia.scss";
@@ -34,6 +34,11 @@ body {
     
         img {
             height:50px;
+        }
+
+        h3 {
+            font-size:32px;
+            font-weight: normal;
         }
     }    
 
@@ -74,17 +79,24 @@ body {
         font-size:32px;    
     }
 
+    h2 {
+        font-size:32px;
+        font-weight: normal;
+        @include margin-top-bottom(30px);
+
+        &.intro {
+            margin-top:0;
+        }
+
+    }
+
     .main-section {
         .main-article {
             @include padding(15px);
-            @include flex (space-between, center, row, wrap);
-            
+            @include flex (space-between, center, row, wrap); 
+
             P {
                 margin-top:10px;
-
-                &.big-font-size {
-                    font-size:24px;
-                }
             }
 
             ul {
@@ -94,9 +106,14 @@ body {
                 &.flex-basis-20 {
                     flex-basis:20%;
                 }
+
+                li.big-font-size {
+                    font-size:24px;
+                    list-style:none;
+                }
             }      
 
-            code {
+            .container {
                 @include flex (center, center, column, wrap);
                 @include margin-top-bottom(25px);
                 font-family: Mason Chronicles;
@@ -125,7 +142,7 @@ body {
                     }
                 }
 
-                blockquote {
+                .citation {
                     @include margin-left-right(20px);
                 }
 

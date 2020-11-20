@@ -27,6 +27,10 @@ body {
 .navbar .header img {
   height: 50px;
 }
+.navbar .header h3 {
+  font-size: 32px;
+  font-weight: normal;
+}
 .navbar .nav-list {
   height: 88%;
   overflow-y: auto;
@@ -57,6 +61,15 @@ body {
 .main-doc .header {
   font-size: 32px;
 }
+.main-doc h2 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-doc h2.intro {
+  margin-top: 0;
+}
 .main-doc .main-section .main-article {
   padding: 15px 15px 15px 15px;
   display: flex;
@@ -68,9 +81,6 @@ body {
 .main-doc .main-section .main-article P {
   margin-top: 10px;
 }
-.main-doc .main-section .main-article P.big-font-size {
-  font-size: 24px;
-}
 .main-doc .main-section .main-article ul {
   margin-left: 45px;
   align-self: flex-start;
@@ -78,7 +88,11 @@ body {
 .main-doc .main-section .main-article ul.flex-basis-20 {
   flex-basis: 20%;
 }
-.main-doc .main-section .main-article code {
+.main-doc .main-section .main-article ul li.big-font-size {
+  font-size: 24px;
+  list-style: none;
+}
+.main-doc .main-section .main-article .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,30 +105,30 @@ body {
   margin-left: 10px;
   font-size: 14px;
 }
-.main-doc .main-section .main-article code p {
+.main-doc .main-section .main-article .container p {
   margin: 0;
   flex-grow: 1;
 }
-.main-doc .main-section .main-article code cite {
+.main-doc .main-section .main-article .container cite {
   font-size: 12px;
 }
-.main-doc .main-section .main-article code img {
+.main-doc .main-section .main-article .container img {
   width: 15px;
 }
-.main-doc .main-section .main-article code img.quote-left {
+.main-doc .main-section .main-article .container img.quote-left {
   align-self: flex-start;
 }
-.main-doc .main-section .main-article code img.quote-right {
+.main-doc .main-section .main-article .container img.quote-right {
   align-self: flex-end;
 }
-.main-doc .main-section .main-article code blockquote {
+.main-doc .main-section .main-article .container .citation {
   margin-left: 20px;
   margin-right: 20px;
 }
-.main-doc .main-section .main-article code.flex-end {
+.main-doc .main-section .main-article .container.flex-end {
   align-self: flex-end;
 }
-.main-doc .main-section .main-article code.flex-grow-0-7 {
+.main-doc .main-section .main-article .container.flex-grow-0-7 {
   flex-grow: 0.7;
 }
 .main-doc .main-section .main-article figure {
@@ -180,7 +194,7 @@ body {
 }
 @media (max-width: 900px) {
   .navbar {
-    height: 300px;
+    height: 350px;
     position: absolute;
     top: 0px;
     width: 100%;
@@ -191,7 +205,7 @@ body {
 
   .main-doc {
     margin-left: 0;
-    margin-top: 303px;
+    margin-top: 353px;
   }
 }
 @media (max-width: 500px) {
