@@ -1,5 +1,5 @@
 @mixin flex-basis ($percent) {
-    flex-basis:#{$percent} + "%"
+    flex-basis:#{$percent} + 0%;
 }
 
 @for $i from 1 through 10 {
