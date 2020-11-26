@@ -1,0 +1,101 @@
+@import "../templates/kuznevia/sass/kuznevia.scss";
+
+$primary:#fff;
+$secondary:#000;
+$thirdly:#242424;
+$fourthly: #9e8af4;
+$fiftly:#ff1a57;
+$sixthly:green;
+
+$header-height:10vh;
+
+html {
+    box-sizing:border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: $primary;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+
+.navbar {
+    
+    @include flex(flex-end, center);
+    @include fixed;
+    background:$thirdly;
+    height:$header-height;
+
+    .navlist {
+        
+        @include flex(space-around, center);
+        list-style-type: none;
+        margin-right:3rem;
+        
+        
+        a {
+            text-decoration: none;
+            color:$primary;
+            margin:0 3rem;
+            font-size:2.2rem;
+            padding:2.4rem;
+
+            &:hover {
+                background:$secondary;
+            }
+        }
+        
+
+    }
+}
+
+.welcome-section {
+    
+    margin-top:$header-height;
+    background:$secondary;
+    height: 100vh - $header-height;
+    @include flex(center, center, column);
+}
+
+.projects {
+    background:$thirdly;
+
+    h2 {
+        @include padding-top-bottom(10rem);
+    }
+
+    .projects-list {
+        display:grid;
+        justify-items:center;
+        grid-template-areas: 
+        "a a"
+        "a a"
+        "a a";
+
+        a {
+            img {
+                
+            }
+        }
+    }
+}
