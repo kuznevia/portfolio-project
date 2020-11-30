@@ -73,15 +73,19 @@ h2 {
     
     margin-top:$header-height;
     background:$secondary;
-    height: 100vh - $header-height;
+    height: 100vh;
     @include flex(center, center, column);
 }
 
-.projects {
+.projects-section {
     background:$thirdly;
+    text-align:center;
+    @include padding-top-bottom (10rem);
 
-    h2 {
-        @include padding-top-bottom(10rem);
+    .projects-header {
+        max-width: 49rem;
+        border-bottom: 0.2rem solid $primary;
+        margin: 0 auto 6rem auto;
     }
 
     .projects-list {
@@ -91,11 +95,57 @@ h2 {
         "a a"
         "a a"
         "a a";
+        row-gap: 5rem;
 
         a {
-            img {
-                
+
+            text-decoration: none;
+            color:$primary;
+            text-align: center;
+
+            .project-image {
+                display: block;
+              
             }
+
+            .project-tile {
+                padding:2rem 0;
+                background:$secondary;
+            }
+
+            .code {
+                color:$secondary;
+            }
+
+            &:hover .code {
+                color:$primary;
+            }
+
         }
+    }
+}
+
+.contact-section {
+    background:$secondary;
+    @include padding-top-bottom (7rem);
+
+    .contact-links {
+        @include flex(center, center);
+        margin-top:3rem;
+
+        .link {
+            @include margin-left-right(3rem);
+            color:$primary;
+            text-decoration: none;
+            font-size:2.4rem;
+            transition: transform 0.3s ease-out;
+            
+
+            &:hover {
+                transform: translateY(8px);
+            }
+
+        }
+
     }
 }

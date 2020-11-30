@@ -68,7 +68,7 @@ h2 {
 .welcome-section {
   margin-top: 10vh;
   background: #000;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,17 +76,65 @@ h2 {
   flex-wrap: nowrap;
 }
 
-.projects {
+.projects-section {
   background: #242424;
-}
-.projects h2 {
+  text-align: center;
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
-.projects .projects-list {
+.projects-section .projects-header {
+  max-width: 49rem;
+  border-bottom: 0.2rem solid #fff;
+  margin: 0 auto 6rem auto;
+}
+.projects-section .projects-list {
   display: grid;
   justify-items: center;
   grid-template-areas: "a a" "a a" "a a";
+  row-gap: 5rem;
+}
+.projects-section .projects-list a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+.projects-section .projects-list a .project-image {
+  display: block;
+}
+.projects-section .projects-list a .project-tile {
+  padding: 2rem 0;
+  background: #000;
+}
+.projects-section .projects-list a .code {
+  color: #000;
+}
+.projects-section .projects-list a:hover .code {
+  color: #fff;
+}
+
+.contact-section {
+  background: #000;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.contact-section .contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 3rem;
+}
+.contact-section .contact-links .link {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+}
+.contact-section .contact-links .link:hover {
+  transform: translateY(8px);
 }
 
 /*# sourceMappingURL=style.css.map */
