@@ -80,21 +80,25 @@ h2 {
 .projects-section {
     background:$thirdly;
     text-align:center;
-    @include padding-top-bottom (10rem);
+    @include padding-top-bottom (8rem);
 
     .projects-header {
         max-width: 49rem;
         border-bottom: 0.2rem solid $primary;
-        margin: 0 auto 6rem auto;
+        margin: 0 auto 0 auto;
+    }
+
+    .projects-disc {
+        @include margin-top-bottom (3rem);
     }
 
     .projects-list {
         display:grid;
         justify-items:center;
         grid-template-areas: 
-        "a a"
-        "a a"
-        "a a";
+        "a a a"
+        "a a a"
+        "a a a";
         row-gap: 5rem;
 
         a {
@@ -105,12 +109,15 @@ h2 {
 
             .project-image {
                 display: block;
-              
+                height:35rem;
+                width: 25vw;
+                object-fit: cover;
             }
 
             .project-tile {
                 padding:2rem 0;
                 background:$secondary;
+                width:25vw;
             }
 
             .code {
@@ -128,10 +135,11 @@ h2 {
 .contact-section {
     background:$secondary;
     @include padding-top-bottom (7rem);
+    text-align: center;
 
     .contact-links {
-        @include flex(center, center);
-        margin-top:3rem;
+        @include flex(center, center, row, wrap);
+        @include margin-top-bottom (3rem);
 
         .link {
             @include margin-left-right(3rem);
@@ -147,5 +155,16 @@ h2 {
 
         }
 
+    }
+
+    a {
+        transition: 0.5s linear;
+        text-decoration: none;
+        color:$fourthly;
+
+        &:hover {
+            text-decoration: underline;
+            color:$fiftly;
+        }
     }
 }

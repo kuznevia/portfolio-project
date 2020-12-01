@@ -79,18 +79,22 @@ h2 {
 .projects-section {
   background: #242424;
   text-align: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .projects-section .projects-header {
   max-width: 49rem;
   border-bottom: 0.2rem solid #fff;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 0 auto;
+}
+.projects-section .projects-disc {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .projects-section .projects-list {
   display: grid;
   justify-items: center;
-  grid-template-areas: "a a" "a a" "a a";
+  grid-template-areas: "a a a" "a a a" "a a a";
   row-gap: 5rem;
 }
 .projects-section .projects-list a {
@@ -100,10 +104,14 @@ h2 {
 }
 .projects-section .projects-list a .project-image {
   display: block;
+  height: 35rem;
+  width: 25vw;
+  object-fit: cover;
 }
 .projects-section .projects-list a .project-tile {
   padding: 2rem 0;
   background: #000;
+  width: 25vw;
 }
 .projects-section .projects-list a .code {
   color: #000;
@@ -116,14 +124,16 @@ h2 {
   background: #000;
   padding-top: 7rem;
   padding-bottom: 7rem;
+  text-align: center;
 }
 .contact-section .contact-links {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .contact-section .contact-links .link {
   margin-left: 3rem;
@@ -135,6 +145,15 @@ h2 {
 }
 .contact-section .contact-links .link:hover {
   transform: translateY(8px);
+}
+.contact-section a {
+  transition: 0.5s linear;
+  text-decoration: none;
+  color: #9e8af4;
+}
+.contact-section a:hover {
+  text-decoration: underline;
+  color: #ff1a57;
 }
 
 /*# sourceMappingURL=style.css.map */
