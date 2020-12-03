@@ -85,11 +85,7 @@ h2 {
 .projects-section .projects-header {
   max-width: 49rem;
   border-bottom: 0.2rem solid #fff;
-  margin: 0 auto 0 auto;
-}
-.projects-section .projects-disc {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin: 0 auto 9rem auto;
 }
 .projects-section .projects-list {
   display: grid;
@@ -168,14 +164,6 @@ h2 {
   }
 }
 @media (max-width: 906px) {
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 15vh;
-  }
   .navbar .navlist {
     display: flex;
     justify-content: space-between;
@@ -183,9 +171,9 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .navbar .navlist li {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .navbar .navlist a {
+    font-size: 1.6rem;
+    padding: 0;
   }
 
   .projects-section .projects-list {
@@ -210,6 +198,21 @@ h2 {
   }
 }
 @media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .navbar .navlist {
+    margin-right: 0.7rem;
+  }
+  .navbar .navlist a {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
   .projects-section .projects-list {
     grid-template-areas: "a" "a" "a";
   }
@@ -222,7 +225,7 @@ h2 {
 }
 @media (max-width: 400px) {
   .navbar {
-    height: 25vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,14 +234,14 @@ h2 {
   }
   .navbar .navlist {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     margin: 0;
   }
   .navbar .navlist a {
-    margin: 1rem;
+    font-size: 1rem;
     padding: 0;
   }
 

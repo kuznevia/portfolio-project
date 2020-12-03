@@ -39,7 +39,6 @@ h2 {
   font-size: 4.2rem;
 }
 
-
 .navbar {
     
     @include flex(flex-end, center);
@@ -83,14 +82,11 @@ h2 {
     text-align:center;
     @include padding-top-bottom (8rem);
 
+
     .projects-header {
         max-width: 49rem;
         border-bottom: 0.2rem solid $primary;
-        margin: 0 auto 0 auto;
-    }
-
-    .projects-disc {
-        @include margin-top-bottom (3rem);
+        margin: 0 auto 9rem auto;
     }
 
     .projects-list {
@@ -202,19 +198,16 @@ h2 {
 @media (max-width:906px) {
         
     $icon-width:50vw;
-    $header-height:15vh;
 
     .navbar {
-    
-        @include flex(center, center);
-        height:$header-height;
     
         .navlist {
             
             @include flex(space-between, center, row, wrap);
-            
-            li {
-                @include margin-top-bottom(1rem);
+
+            a {
+                font-size:1.6rem;
+                padding:0;
             }
         }
     }
@@ -258,6 +251,20 @@ h2 {
         
     $icon-width:75vw;
 
+    .navbar {
+        @include flex(center, center);
+
+        .navlist {
+
+            margin-right:0.7rem;
+
+            a {
+                font-size:1.2rem;
+                padding:0;
+            }
+        }
+    }
+
    .projects-section {
     
     .projects-list {
@@ -285,7 +292,7 @@ h2 {
 @media (max-width:400px) {
         
     $icon-width:95vw;
-    $header-height:25vh;
+    $header-height:10vh;
 
     .navbar {
     
@@ -294,11 +301,11 @@ h2 {
     
         .navlist {
             
-            @include flex(center, center, column, wrap);
+            @include flex(space-around, center, row, nowrap);
             margin:0;
 
             a {
-                margin:1rem;
+                font-size:1rem;
                 padding:0;
             }
         }
