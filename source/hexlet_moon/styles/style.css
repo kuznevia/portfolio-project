@@ -228,7 +228,7 @@ input {
 
 .mr-right-30 {
     margin-right:30px;
-}
+}   
 
 .mr-right-60 {
     margin-right:60px;
@@ -334,9 +334,12 @@ input {
 }
 
 @media (max-width:700px) {
+    :root { 
+        --header-height:140px;
+    }
+
     .header {
         flex-wrap: wrap;
-        height:auto;
     }
 
     .container {
@@ -359,7 +362,9 @@ input {
     .mobile-nav {
         display:flex;
         justify-content: space-between;
+        align-items: center;
         flex-basis:100%;
+        font-size:14px;
     }
 
     .mobile-flex-basis-75 {

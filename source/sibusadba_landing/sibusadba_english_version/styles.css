@@ -48,6 +48,15 @@
 	color:rgba(256,256,256,0.5);
 }
 
+.change-language {
+	position: absolute;
+	top:0;
+	right:0;
+	color:white;
+	font-size: 16px;
+	text-decoration: none;
+}
+
 @media (min-width: 700px) {
 	#nav-bar {
 		min-width: 600px;
@@ -58,19 +67,28 @@
 	#nav-bar {
 		min-width: 900px;
 	}
+
 }
 
+
 @media (max-width: 500px) {
+	
+	.change-language {
+		right:50px;
+	}
+
 	#header-tagline {
 		margin-right: auto;
 	}
 
 	#nav-bar {
 		flex-direction: column;
-		align-items: center;
+		align-items: left;
 		min-width: 300px;
 		min-height: 100px;
 	}
+
+
 }
 
 #footer {
@@ -260,14 +278,6 @@ input[type="button"]:hover {
 	margin-bottom: 55px;
 }
 
-.change-language {
-	position: absolute;
-	top:0;
-	right:0;
-	color:white;
-	font-size: 16px;
-	text-decoration: none;
-}
 
 @media (max-width: 550px) {
 	iframe {
