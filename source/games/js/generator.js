@@ -2,13 +2,10 @@
         var passwordLength = readInt();
         var password = '';
         var letter;
-        var digit;
         var possible = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-=#!%$*";
-        document.getElementById("password").innerHTML = '';
         var copy = document.querySelector('#copy');
 
         for (var i = 0; i < passwordLength; i++) {
-            var random = parseInt(Math.random() * 100);
             letter = possible.charAt(Math.floor(Math.random() * possible.length));
             password = password + letter;	
         }
@@ -36,7 +33,7 @@
         show('Скопирован пароль: ' + copyText.value);
     }
 
-    function reset(){
+    function reset() {
         document.getElementById("password").innerHTML = '';
         document.getElementById("length").value = '';
         var copy = document.querySelector('#copy');

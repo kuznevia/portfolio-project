@@ -11,7 +11,6 @@ header {
 	height: 50px;
 	line-height: 3;
 	text-align: center;
-	padding-top: 18px;
 	margin: 0;
 }
 
@@ -125,7 +124,7 @@ footer span {
 @media (max-width:985px) {
 	
 	header {
-		height:100px;
+		height:133px;
 	}
 
 	.games {
@@ -138,7 +137,7 @@ footer span {
 @media (max-width:610px) {
 	
 	header {
-		height:150px;
+		height:200px;
 	}
 
 	.box p {
@@ -188,7 +187,9 @@ footer span {
 	
 
 	header {
-		height:200px;;
+		height:250px;
+		margin-bottom:55px;
+		font-size:10px;
 	}
 	
 }

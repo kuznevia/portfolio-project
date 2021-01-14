@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>КВВ</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/agent_smith.png" type="image/x-icon">
+</head>
+<body>
+	<div id="page-container">
+		<div id="content-wrap">
+			<header>
+				<a href="index.html"> Главная</a>
+				<a href="puzzle.html"> Загадки</a>
+				<a href="guess.html"> Угадайка</a>
+				<a href="guess_multiplayer.html"> Угадайка для двух игроков</a>
+				<a href="generator.html"> Генератор случайных паролей</a>
+				<a href="birthdays.html">Генератор случайных соотношений</a>
+			</header>
+			<main>
+				<section>
+					<h1 class="maintext">Генератор случайных соотношений</h1>
+					<div class="box">
+						<input type="text" id="length" placeholder="Введите участников через запятую">
+						<p id="password"></p>
+                        <button type="button" onClick="generate();" id="button">Сгенерировать</button>
+                        <button type="reset" onClick="reset()" value="Сбросить">Сбросить</button>
+						<button type="button" onClick="copy();" id="copy" class="hidden">Копировать</button>
+					</div>
+				</section>
+			</main>
+		</div>
+		<footer>
+		<span>Copyright &copy; kuznevia</span>
+		</footer>
+	</div>
+</body>
+<script src="js/birthdays.js"></script>
+</html>
