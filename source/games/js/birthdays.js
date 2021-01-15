@@ -7,15 +7,13 @@ function generate() {
     let result = [];
 
     
-    for (let i = 0; i < listOneArray.length; i += 0) {
+    while (listOneArray.length > 0) {
         let randomNumberOne = random(listOneArray.length);
-        let randomNumberTwo  = random(listTwoArray.length);
-    
-            if (listOneArray.length > 1) {
-                while (listOneArray[randomNumberOne] === listTwoArray[randomNumberTwo]) {
-                    randomNumberTwo = random(listTwoArray.length);
-                }
-            }
+        let randomNumberTwo = 0;
+
+        do {
+            randomNumberTwo = random(listTwoArray.length);
+        } while (listOneArray.length > 1 && listOneArray[randomNumberOne] === listTwoArray[randomNumberTwo])
     
         let pair = [listOneArray[randomNumberOne], listTwoArray[randomNumberTwo]];
         result.push(pair);
