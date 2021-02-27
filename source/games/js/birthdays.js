@@ -1,43 +1,29 @@
-function generate() {
-    
-    let listOneArray = document.getElementById("length").value.split(',');
-    let listTwoArray = document.getElementById("length").value.split(',');
-    var copy = document.querySelector('#copy');
+import write from './functions/write.js';
 
-    let result = [];
+const random = (max) => Math.floor(Math.random() * Math.floor(max));
 
-    
-    while (listOneArray.length > 0) {
-        let randomNumberOne = random(listOneArray.length);
-        let randomNumberTwo = 0;
+export default () => {
+  const listOneArray = document.getElementById('length').value.split(',');
+  const listTwoArray = document.getElementById('length').value.split(',');
+  const copy = document.querySelector('#copy');
 
-        do {
-            randomNumberTwo = random(listTwoArray.length);
-        } while (listOneArray.length > 1 && listOneArray[randomNumberOne] === listTwoArray[randomNumberTwo])
-    
-        let pair = [listOneArray[randomNumberOne], listTwoArray[randomNumberTwo]];
-        result.push(pair);
-        listOneArray.splice(randomNumberOne, 1);
-        listTwoArray.splice(randomNumberTwo, 1);
+  const result = [];
 
-    }    
-    
-    write(result);
-    copy.classList.remove('hidden');
-   
-}
+  while (listOneArray.length > 0) {
+    const randomNumberOne = random(listOneArray.length);
+    let randomNumberTwo = 0;
 
-function reset() {
-    document.getElementById("password").innerHTML = '';
-    document.getElementById("length").value = '';
-    document.querySelector('#copy').classList.add('hidden');
-}
- 
+    do {
+      randomNumberTwo = random(listTwoArray.length);
+    } while (listOneArray.length > 1
+      && listOneArray[randomNumberOne] === listTwoArray[randomNumberTwo]);
 
-function write (text) {
-    document.getElementById("length").value = text;
-}
+    const pair = [listOneArray[randomNumberOne], listTwoArray[randomNumberTwo]];
+    result.push(pair);
+    listOneArray.splice(randomNumberOne, 1);
+    listTwoArray.splice(randomNumberTwo, 1);
+  }
 
-function random(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
+  write(result);
+  copy.classList.remove('hidden');
+};
