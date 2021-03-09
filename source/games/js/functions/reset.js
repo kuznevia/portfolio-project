@@ -1,5 +1,6 @@
-export default () => {
+const reset = () => {
   document.getElementById('password').innerHTML = '';
   document.getElementById('length').value = '';
-  document.querySelector('#copy').classList.add('hidden');
+  const copy = document.querySelector('#copy');
+  copy.classList.add('hidden');
 };

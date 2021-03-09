@@ -1,8 +1,10 @@
-import write from './functions/write.js';
+const write = (text) => {
+  document.getElementById('length').value = text;
+};
 
 const random = (max) => Math.floor(Math.random() * Math.floor(max));
 
-export default () => {
+const generate = () => {
   const listOneArray = document.getElementById('length').value.split(',');
   const listTwoArray = document.getElementById('length').value.split(',');
   const copy = document.querySelector('#copy');
