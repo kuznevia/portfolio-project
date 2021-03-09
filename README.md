@@ -5,7 +5,7 @@ This is my portoflio site, where I share all my projects. I aim to become front-
 1. Tribute page
 2. Survery form
 3. Landing pages #1 and #2
-4. Wicher's bestiary (including some SCSS)
+4. Witcher's bestiary (including some SCSS)
 
 ### HTML + CSS + JS projects:
 1. Games
