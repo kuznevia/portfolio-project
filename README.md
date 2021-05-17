@@ -2,7 +2,7 @@
 This is my portoflio site, where I share all my projects. I aim to become front-end developer.
 
 ### First project (HTML + CSS + JS basics)
-1. <a href="https://kuznevia.github.io/portfolio/source/tribute_page/index.html" target="_blank">Games</a>
+1. <a href="https://kuznevia.github.io/portfolio/source/games/index.html" target="_blank">Games</a>
 
 ### HTML + CSS projects:
 1. <a href="https://kuznevia.github.io/portfolio/source/tribute_page/index.html" target="_blank">Tribute page</a>
