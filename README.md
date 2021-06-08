@@ -15,4 +15,4 @@ This is my portoflio site, where I share all my projects. I aim to become front-
 ### JS projects:
 
 1. <a href="https://github.com/kuznevia/frontend-project-lvl1" target="_blank">Hexlet Brain-Games Project №1</a>
-2. 1. <a href="https://github.com/kuznevia/frontend-project-lvl2" target="_blank">Hexlet Difference Calculator Project №2</a>
+2. <a href="https://github.com/kuznevia/frontend-project-lvl2" target="_blank">Hexlet Difference Calculator Project №2</a>
