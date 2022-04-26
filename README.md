@@ -18,3 +18,6 @@ This is my portoflio repository, where I share all my projects. I aim to become 
 
 1. <a href="https://github.com/kuznevia/frontend-project-lvl3" target="_blank">Hexlet RSS feed reader with posts autoupdate Project №3</a>
 2. <a href="https://github.com/kuznevia/frontend-project-lvl4" target="_blank">Hexlet React Mini Slack App Project №4</a>
+
+### Test tasks:
+1. <a href="https://github.com/kuznevia/React-Calculator" target="_blank">React Calculator</a>
