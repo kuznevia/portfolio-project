@@ -20,4 +20,4 @@ This is my portoflio repository, where I share all my projects. I aim to become 
 2. <a href="https://github.com/kuznevia/frontend-project-lvl4" target="_blank">Hexlet React Mini Slack App Project №4</a>
 
 ### Test tasks:
-1. <a href="https://github.com/kuznevia/React-Calculator" target="_blank">React Calculator</a>
+1. <a href="https://github.com/kuznevia/React-Calculator" target="_blank">React TypeScript Calculator</a>
