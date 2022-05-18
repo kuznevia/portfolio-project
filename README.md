@@ -1,6 +1,3 @@
-### Hi, I am Slava
-This is my portoflio repository, where I share all my projects. I aim to become front-end developer.
-
 ### HTML + CSS projects (FreeCodeCamp):
 1. <a href="https://kuznevia.github.io/portfolio/source/tribute_page/index.html" target="_blank">Tribute page</a>
 2. <a href="https://kuznevia.github.io/portfolio/source/survey/index.html" target="_blank">Survery form</a>
@@ -8,16 +5,3 @@ This is my portoflio repository, where I share all my projects. I aim to become 
 4. <a href="https://kuznevia.github.io/portfolio/source/hexlet_moon/index.html" target="_blank">Landing page Hexlet_Moon</a>
 5. <a href="https://kuznevia.github.io/portfolio/source/witchers_bestiary/index.html" target="_blank">Witcher's bestiary (including some SCSS)</a>
 6. <a href="https://kuznevia.github.io/portfolio/" target="_blank"> Portfolio</a>
-
-### Node JS projects (Hexlet):
-
-1. <a href="https://github.com/kuznevia/frontend-project-lvl1" target="_blank">Hexlet Brain-Games Project №1</a>
-2. <a href="https://github.com/kuznevia/frontend-project-lvl2" target="_blank">Hexlet Difference Calculator Project №2</a>
-
-### Front-end projects (Hexlet):
-
-1. <a href="https://github.com/kuznevia/frontend-project-lvl3" target="_blank">Hexlet RSS feed reader with posts autoupdate Project №3</a>
-2. <a href="https://github.com/kuznevia/frontend-project-lvl4" target="_blank">Hexlet React Mini Slack App Project №4</a>
-
-### Test tasks:
-1. <a href="https://github.com/kuznevia/React-Calculator" target="_blank">React TypeScript Calculator</a>
